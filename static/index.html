@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script type="text/javascript" src="omegle.js"></script>
+  </head>
+  <body>
+    <form>
+      <input type="button" id="seek" value="Seek" onclick="client.seek();" />
+      
+      <div id="chat">
+        <div id="messages"></div>
+        <input id="send_message" />
+        <input type="button" id="send" value="Send" onclick="client.send();" />
+        <input type="button" id="disconnect" value="Disconnect" onclick="client.close();" />
+      </div>
+
+    </form>
+  </body>
+</html>
+  
