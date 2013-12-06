@@ -17,7 +17,7 @@ seekers = gevent.queue.Queue()
 
 
 def relay(from_, to):
-    """receive messages from from_ send them to to"""
+    """route messges from_ -> to"""
     try:
         while True:
             to.send(from_.receive())
